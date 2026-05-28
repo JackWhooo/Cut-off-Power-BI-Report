@@ -44,6 +44,7 @@ By including the interactive elements, I have made it flexible to be catered to 
 # Dashboard Features
 
 1. Dynamic Cut-Off Testing
+
 Users can:
 adjust cut-off window (X days before/after year-end),
 analyse transaction volumes around YE,
