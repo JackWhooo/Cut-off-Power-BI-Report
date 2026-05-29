@@ -18,7 +18,7 @@
 10. How to Use
 11. Future Improvements
 
-# Project Overview
+# 1. Project Overview
 This project is an end-to-end audit analytics dashboard built in Power BI using Accounts Payable and transaction-level invoice data.
 The dashboard was designed to visualise Purchase to Pay transactions and hence to aid audit procedures commonly performed, including:
 - Cut-off testing
@@ -29,7 +29,7 @@ The dashboard was designed to visualise Purchase to Pay transactions and hence t
 
 The objective of the project was to demonstrate how I use Power BI to enhance audit efficiency and financial analysis through interactive data visualisation.
 
-# Business Problem
+# 2. Business Problem
 During external audits, auditors often manually inspect transactions around year-end, overdue payables, unusual balances, and high-risk invoices. This process is typically spreadsheet-driven and time-consuming.
 
 This dashboard transforms these audit procedures into an interactive analytics solution that allows users to:
@@ -41,7 +41,7 @@ This dashboard transforms these audit procedures into an interactive analytics s
 By including the interactive elements, I have made it flexible to be catered to each specific client with different materiality levels.
 
 
-# Dashboard Features
+# 3. Dashboard Features
 
 1. Dynamic Cut-Off Testing
 
@@ -70,15 +70,6 @@ The dashboard includes:
 
 Users are able to drill-through to all the accounts payable to any supplier and to the summary of all the invoices in a certain age bucket.
 
-[sreenshot]
-
-
-3. Unusual Items Review
-
-The dashboard identifies:
-debit balance AP accounts,
-unusual balances,
-vendors requiring investigation.
 
 [sreenshot]
 
@@ -87,23 +78,42 @@ Below are the step-by-step walkthrough of how I built this Power BI report for A
 </samp></p>
 
 
-# Other Dashboard Screenshots
-
-
-# Files Included
-| File                         | Description              |
-| ---------------------------- | ------------------------ |
-| `.pbix`                      | Power BI dashboard       |
-| `AP_modified.xlsx`           | Accounts Payable dataset |
-| `Transactions_modified.xlsx` | Transaction dataset      |
-| `README.md`                  | Project documentation    |
+# 4. Files Included
+| File                                         | Description              |
+| -------------------------------------------- | ------------------------ |
+| `.pbix`                                      | Power BI dashboard       |
+| `Modified_ dummy_AP_Listing_v2.csv           | Accounts Payable dataset |
+| `Modified_ dummy_Transaction_Listing_v2.csv  | Transaction dataset      |
+| `README.md`                                  | Project documentation    |
 
 
 P.S.
 Example data presented in the project is fictional for illustration
 
-Step 1:
-Transform Data
-- Change Type of certain columns
+# 5. Pre-requisite Knowledge
 
-Step 2:
+Power BI
+- Interactive dashboards
+- Drill-down & drill-through
+- Dynamic slicers
+- Conditional formatting
+- KPI cards
+- DAX
+- Measures
+- Calculated columns
+- Dynamic filtering
+- Visualisation
+
+Data Modelling
+- Star schema
+- Relationship modelling
+- Date table creation
+
+Finance Knowledge
+- Cut-off testing
+- Aging analysis
+- AP review procedures
+- Working capital analysis
+
+
+
