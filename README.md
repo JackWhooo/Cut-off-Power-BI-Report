@@ -54,6 +54,7 @@ Users can:
 - Analyse transaction volumes around YE,
 - Identify high-value transactions above threshold (highlighted automatically) near YE.
 - Analyse transaction trend
+- Analyse transaction amounts by vendor via the scatter chart
 - Drill-through to Transaction Details directly
 
 
@@ -63,12 +64,11 @@ Users can:
 2. Accounts Payable Aging Analysis
 
 The dashboard includes:
-aging bucket analysis,
-vendor-level aging review,
-overdue invoice tracking.
+- aging bucket analysis,
+- vendor-level aging review,
+- overdue invoice tracking.
 
-Aging Buckets:
-0–30 days; 31–60 days; 61–90 days; 91–120 days; 120+ days
+Users are able to drill-through to all the accounts payable to any supplier and to the summary of all the invoices in a certain age bucket.
 
 [sreenshot]
 
