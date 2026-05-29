@@ -6,6 +6,26 @@
   <img src="https://custom-icon-badges.demolab.com/badge/Power%20BI-F1C912?logo=power-bi&logoColor=fff">
 </p>
 
+
+# Audit Analytics Dashboard – Power BI
+
+Interactive audit analytics solution built in Power BI to automate Accounts Payable cut-off testing, aging analysis, unusual item review, and high-value transaction identification.
+
+## Key Features
+- Dynamic cut-off window analysis
+- Adjustable materiality thresholds
+- Drill-through transaction review
+- AP aging analytics
+- Interactive audit visualisations
+
+## Technologies
+Power BI • DAX • Power Query • Data Modelling • Audit Analytics
+
+![Power BI](https://img.shields.io/badge/PowerBI-Analytics-yellow)
+![DAX](https://img.shields.io/badge/DAX-Data%20Modeling-blue)
+![Audit](https://img.shields.io/badge/Audit-Analytics-green)
+![Finance](https://img.shields.io/badge/Finance-Transformation-orange)
+
 1. Project Overview
 2. Business Problem
 3. Dashboard Features
