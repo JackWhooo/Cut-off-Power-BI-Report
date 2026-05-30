@@ -12,7 +12,57 @@
 ## 📌 Executive Summary
 Finance and external audit procedures are traditionally manual and spreadsheet-heavy workflows. I engineered this Power BI project to bridge **External Audit Methodology** with **Finance Transformation**. 
 
-This interactive analytics solution transforms static Accounts Payable (AP) procedures into a dynamic, parameter-driven workflow—automating cut-off testing, anomaly detection, and aging analysis. It demonstrates how scalable data modelling can reduce manual hours, improve transparency, and adapt instantly to different materiality thresholds.
+This interactive analytics solution transforms static Accounts Payable (AP) procedures into a dynamic, parameter-driven workflow—automating cut-off testing, anomaly detection, and aging analysis. It demonstrates how scalable data modelling can reduce manual hours, improve transparency, and be tailored to different materiality thresholds.
+
+![Dashboard Demo](https://via.placeholder.com/800x400.png?text=Insert+Animated+GIF+of+Dashboard+Here)
+
+---
+
+## 📌 Solutions & Features
+
+### 1. Dynamic Cut-Off & Anomaly Detection Engine
+* **The Problem:** Auditors pull transaction logs and manually filter dates around year-end to test for cut-off inaccuracies.
+* **The Automated Solution:** A parameter-driven cut-off dashboard. Users adjust a visual slider (e.g., +/- 15 days from Year-End) and input a custom materiality limit. The system instantly isolates and highlights high-value, high-risk transactions near the financial boundary.
+> *[Insert your actual cut-off screenshot here. e.g., `![Cut-Off Analysis](screenshots/cutoff.png)`]*
+
+Interactive Features:
+- Cut-off days selector
+- Threshold slicer
+
+Users can:
+- Adjust cut-off window (X days before/after year-end) and select the desired threshold,
+- Analyse transaction volumes around YE,
+- Identify high-value transactions above threshold (highlighted automatically) near YE.
+- Analyse transaction trend
+- Analyse transaction amounts by vendor via the scatter chart
+- Drill-through to Transaction Details directly
+
+### 2. Interactive Aging & Working Capital Analysis
+* **The Problem:** Static AP aging reports offer no ability to investigate underlying invoices without pulling secondary reports. AP aging is not visualised.
+* **The Automated Solution:** A continuous-monitoring aging matrix with drill-through capabilities. Users can identify an overdue liability bucket at the macro level, and click through to investigate the exact supplier details and individual invoice histories.
+> *[Insert your actual aging screenshot here. e.g., `![Aging Analysis](screenshots/aging.png)`]*
+
+The dashboard includes:
+- aging bucket analysis,
+- vendor-level aging review,
+- overdue invoice tracking.
+
+Users are able to drill-through to all the accounts payable to any supplier and to the summary of all the invoices in a certain age bucket.
+
+---
+## 📌 Data Model
+
+The dashboard integrates:
+- AP listing
+- Transaction listing
+- Date dimension table
+
+Relationships were established using:
+- Invoice IDs
+- Vendor dimensions
+- Date dimensions
+
+![Data Model](docs/data_model.png)
 
 ---
 
@@ -21,7 +71,24 @@ This interactive analytics solution transforms static Accounts Payable (AP) proc
 * **Power BI & Data Storytelling:** Designed an intuitive UI with interactive drill-throughs, dynamic slicers, and conditional formatting to instantly surface high-risk transactions.
 * **DAX (Data Analysis Expressions):** Engineered complex, dynamic measures enabling users to manipulate materiality thresholds and rolling cut-off windows in real-time.
 * **Data Modelling (Star Schema):** Built a robust, performance-optimised relational model connecting Fact tables (Transactions, AP Listing) with Dimension tables (Vendors, Dates).
-* **Power Query:** Automated the ETL (Extract, Transform, Load) pipeline to clean and standardise raw financial datasets.
+* **Finance Knowledge:** Cut-off, Aging analysis, AP review procedures
+
+---
+
+## 📌 Files Included
+| File                                         | Description              |
+| -------------------------------------------- | ------------------------ |
+| `Audit Analytics Solution for AP Review.pbit`  | Power BI dashboard       |
+| `Modified_ dummy_AP_Listing_v2.csv`            | Accounts Payable dataset |
+| `Modified_ dummy_Transaction_Listing_v2.csv`   | Transaction dataset      |
+| `README.md`                                  | Project documentation    |
+
+
+P.S.
+Example data presented in the project is fictional for illustration
+
+
+
 
 
 
@@ -31,10 +98,6 @@ This interactive analytics solution transforms static Accounts Payable (AP) proc
 - Drill-through transaction review
 - AP aging analytics
 - Interactive visualisations
-
-## Dashboard Preview
-
-![Dashboard](screenshots/executive_summary.png)
 
 
 ## Business Problem
@@ -49,19 +112,7 @@ This dashboard transforms these procedures into an interactive analytics solutio
 - and drill into invoice-level details.
 By including the interactive elements, I have made it flexible to be catered to each specific client with different materiality levels.
 
-## Data Model
 
-The dashboard integrates:
-- AP listing
-- Transaction listing
-- Date dimension table
-
-Relationships were established using:
-- Invoice IDs
-- Vendor dimensions
-- Date dimensions
-
-![Data Model](docs/data_model.png)
 
 
 ## Dashboard Features
@@ -77,28 +128,11 @@ Relationships were established using:
 ## End-to-end Use Case
 1. Dynamic Cut-Off Testing
 
-Interactive Features:
-- Cut-off days selector
-- Threshold slicer
-
-Users can:
-- Adjust cut-off window (X days before/after year-end) and select the desired threshold,
-- Analyse transaction volumes around YE,
-- Identify high-value transactions above threshold (highlighted automatically) near YE.
-- Analyse transaction trend
-- Analyse transaction amounts by vendor via the scatter chart
-- Drill-through to Transaction Details directly
 
 [sreenshot]
 
 2. Accounts Payable Aging Analysis
 
-The dashboard includes:
-- aging bucket analysis,
-- vendor-level aging review,
-- overdue invoice tracking.
-
-Users are able to drill-through to all the accounts payable to any supplier and to the summary of all the invoices in a certain age bucket.
 
 [sreenshot]
 
@@ -134,18 +168,6 @@ The project reflects the growing importance of analytics and automation within f
 6. Prerequisite Knowledge
 
 
-
-## Files Included
-| File                                         | Description              |
-| -------------------------------------------- | ------------------------ |
-| `Audit Analytics Solution for AP Review.pbit`  | Power BI dashboard       |
-| `Modified_ dummy_AP_Listing_v2.csv`            | Accounts Payable dataset |
-| `Modified_ dummy_Transaction_Listing_v2.csv`   | Transaction dataset      |
-| `README.md`                                  | Project documentation    |
-
-
-P.S.
-Example data presented in the project is fictional for illustration
 
 # 6. Prerequisite Knowledge
 
