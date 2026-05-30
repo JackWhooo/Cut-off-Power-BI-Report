@@ -1,13 +1,28 @@
 <h1 align="center">
-  <b>Audit Analytics Dashboard for Accounts Payable </b>
+  <b>Analytics Dashboard for Accounts Payable </b>
 </h1>
 
-<p align="center">
-  <img src="https://custom-icon-badges.demolab.com/badge/Power%20BI-F1C912?logo=power-bi&logoColor=fff">
-  &nbsp; DAX • Power Query • Data Modelling
-</p>
+<div align="center">
+  <a href="#"><img src="https://custom-icon-badges.demolab.com/badge/Power%20BI-F2C811?logo=power-bi&logoColor=fff" alt="Power BI"></a>
+  <a href="#"><img src="https://custom-icon-badges.demolab.com/badge/DAX-0078D4?logo=microsoft&logoColor=fff" alt="DAX"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Power%20Query-5E9624?logo=microsoftexcel&logoColor=fff" alt="Power Query"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Data%20Modelling-00599C?logo=microsoftsqlserver&logoColor=fff" alt="Data Modelling"></a>
+</div>
 
-Interactive audit analytics solution built in Power BI to automate Accounts Payable cut-off testing, aging analysis, unusual item review, and high-value transaction identification.
+## 📌 Executive Summary
+Finance and external audit procedures are traditionally manual and spreadsheet-heavy workflows. I engineered this Power BI project to bridge **External Audit Methodology** with **Finance Transformation**. 
+
+This interactive analytics solution transforms static Accounts Payable (AP) procedures into a dynamic, parameter-driven workflow—automating cut-off testing, anomaly detection, and aging analysis. It demonstrates how scalable data modelling can reduce manual hours, improve transparency, and adapt instantly to different materiality thresholds.
+
+---
+
+## 📌 Technical Architecture & Skills Demonstrated
+
+* **Power BI & Data Storytelling:** Designed an intuitive UI with interactive drill-throughs, dynamic slicers, and conditional formatting to instantly surface high-risk transactions.
+* **DAX (Data Analysis Expressions):** Engineered complex, dynamic measures enabling users to manipulate materiality thresholds and rolling cut-off windows in real-time.
+* **Data Modelling (Star Schema):** Built a robust, performance-optimised relational model connecting Fact tables (Transactions, AP Listing) with Dimension tables (Vendors, Dates).
+* **Power Query:** Automated the ETL (Extract, Transform, Load) pipeline to clean and standardise raw financial datasets.
+
 
 
 ## Key Features
